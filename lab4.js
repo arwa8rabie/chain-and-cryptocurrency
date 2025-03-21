@@ -25,11 +25,9 @@ function unblind(blindingFactor, sig, n) {
 
 let agency = new SpyAgency();
 
-// Prepare 10 documents with different cover identities
 let coverNames = ["Agent X", "Agent Y", "Agent Z", "John Doe", "Jane Roe", "Mr. Smith", "Ms. Johnson", "Dr. No", "Q", "M"]; 
 let documents = coverNames.map(makeDocument);
 
-// Blind the documents and store blinding factors
 let blindedDocs = [];
 let blindingFactors = [];
 
